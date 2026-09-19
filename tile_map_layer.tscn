@@ -1,0 +1,25 @@
+[gd_scene format=4 uid="uid://ceou1r2qc2rcu"]
+
+[ext_resource type="Texture2D" uid="uid://cyngjl7mq5qct" path="res://Sprite-0001.png" id="1_0ugm7"]
+[ext_resource type="Texture2D" uid="uid://bblsasjy7qs55" path="res://Sprite-0002.png" id="2_vqaso"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vqaso"]
+texture = ExtResource("1_0ugm7")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_5sisn"]
+sources/0 = SubResource("TileSetAtlasSource_vqaso")
+
+[node name="TileMapLayer" type="TileMapLayer" unique_id=1857884117]
+tile_map_data = PackedByteArray("AAD9/wAAAAAAAAAAAAD+/wAAAAAAAAAAAAD//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAACAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAGAAAAAAAAAAAAAAD8/wAAAAAAAAAAAAD5/wAAAAAAAAAAAAD4/wAAAAAAAAAAAAD3/wAAAAAAAAAAAAD6/wAAAAAAAAAAAAD7/wAAAAAAAAAAAAA=")
+tile_set = SubResource("TileSet_5sisn")
+
+[node name="Node2D" type="Node2D" parent="." unique_id=2111458338]
+position = Vector2(-15, -8)
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="Node2D" unique_id=391285703]
+
+[node name="Sprite0002" type="Sprite2D" parent="Node2D/CharacterBody2D" unique_id=1829027603]
+texture = ExtResource("2_vqaso")
